@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d74962-3206-4c4d-9a01-099bf2974af9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/go-sql-driver/mysql/driver_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/go-sql-driver/mysql/driver_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/mux/mux_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/mux/mux_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github.com/gorilla/mux/old_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/github.com/gorilla/mux/old_test.go" afterDir="false" />
@@ -89,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="68">
-                <caret line="4" column="21" selection-end-line="7" />
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
               </first_editor>
               <second_editor />
             </state>
@@ -284,12 +285,12 @@
       <workItem from="1732601236976" duration="1504000" />
       <workItem from="1732603821897" duration="21000" />
       <workItem from="1732603880291" duration="15000" />
-      <workItem from="1732603942305" duration="6204000" />
+      <workItem from="1732603942305" duration="6510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28823000" />
+    <option name="totallyTimeSpent" value="29129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -636,8 +637,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="21" selection-end-line="7" />
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>
