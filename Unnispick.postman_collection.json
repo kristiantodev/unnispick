@@ -1,0 +1,761 @@
+{
+	"info": {
+		"_postman_id": "5a8c78ff-0781-4b9f-af73-6f5cfe94e563",
+		"name": "Unnispick",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14320440"
+	},
+	"item": [
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Tambah Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_brand\" : \"Kosmetik\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/brand"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_brand\" : \"Kosmetik\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/brand"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:00:42 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Menambahkan Data\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Validate",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_brand\" : \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/brand"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:01:56 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Nama Brand tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Brand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/brand/4"
+					},
+					"response": [
+						{
+							"name": "Id Brand Tidak Diketahui",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/brand/4"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:02:53 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Id Brand tidak diketahui\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/brand/3"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:03:23 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Menghapus Data\",\n        \"content\": null\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Produk",
+			"item": [
+				{
+					"name": "Tambah Produk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_produk\" : \"\",\r\n    \"harga\" : 75000,\r\n    \"qty\" : 10,\r\n    \"id_brand\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/produk"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Kosmtik A\",\r\n    \"harga\" : 75000,\r\n    \"qty\" : 10,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:44:33 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Menambahkan Data\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Produk kosong",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"\",\r\n    \"harga\" : 75000,\r\n    \"qty\" : 10,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:45:00 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Nama Produk tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Harga Kosong",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Kosmtik A\",\r\n    \"harga\" : 0,\r\n    \"qty\" : 10,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:45:17 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Harga tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Qty Kosong",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Kosmtik A\",\r\n    \"harga\" : 85000,\r\n    \"qty\" : 0,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:45:37 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Qty tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "IdBrand Unknow",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Kosmtik B\",\r\n    \"harga\" : 85000,\r\n    \"qty\" : 11,\r\n    \"id_brand\" : 11\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:45:58 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Id Brand tidak diketahui\",\n        \"content\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Produk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/produk?page=1&limit=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produk"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show 2 Data page 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/produk?page=1&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produk"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:49:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Mengambil Data\",\n        \"content\": [\n            {\n                \"nama_produk\": \"Kosmtik A\",\n                \"harga\": 75000,\n                \"qty\": 10,\n                \"id_brand\": 1,\n                \"brand\": \"Kosmetik\"\n            },\n            {\n                \"nama_produk\": \"Kosmtik B\",\n                \"harga\": 85000,\n                \"qty\": 11,\n                \"id_brand\": 1,\n                \"brand\": \"Kosmetik\"\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "Show 2 Data page 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/produk?page=2&limit=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"produk"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										},
+										{
+											"key": "limit",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:51:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Mengambil Data\",\n        \"content\": [\n            {\n                \"nama_produk\": \"Kosmtik C\",\n                \"harga\": 85000,\n                \"qty\": 11,\n                \"id_brand\": 1,\n                \"brand\": \"Kosmetik\"\n            },\n            {\n                \"nama_produk\": \"Kosmtik D\",\n                \"harga\": 85000,\n                \"qty\": 11,\n                \"id_brand\": 1,\n                \"brand\": \"Kosmetik\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Produk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/produk/10"
+					},
+					"response": [
+						{
+							"name": "Id Produk Unkwon",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/produk/10"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:54:22 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "96"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Id Produk tidak diketahui\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8080/produk/5"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:54:50 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Menghapus Data\",\n        \"content\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Produk",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nama_produk\" : \"Kosmtik E\",\r\n    \"harga\" : 85000,\r\n    \"qty\" : 11,\r\n    \"id_brand\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/produk/5"
+					},
+					"response": [
+						{
+							"name": "IdProduk Tidak Diketahui",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Kosmtik E\",\r\n    \"harga\" : 85000,\r\n    \"qty\" : 11,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk/5"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:56:00 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "96"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Id Produk tidak diketahui\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Produk kosong",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"\",\r\n    \"harga\" : 85000,\r\n    \"qty\" : 11,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk/4"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:56:53 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Nama Produk tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Harga kosong",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Lipstik\",\r\n    \"harga\" : 0,\r\n    \"qty\" : 11,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk/4"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:57:11 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "95"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Harga tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "qty kosong",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Lipstik\",\r\n    \"harga\" : 125000,\r\n    \"qty\" : 0,\r\n    \"id_brand\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk/4"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:57:29 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": false,\n        \"code\": 400,\n        \"message\": \"Qty tidak boleh kosong\",\n        \"content\": null\n    }\n}"
+						},
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_produk\" : \"Lipstik\",\r\n    \"harga\" : 125000,\r\n    \"qty\" : 100,\r\n    \"id_brand\" : 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8080/produk/4"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 08:59:07 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "92"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"unnispick\": {\n        \"success\": true,\n        \"code\": 200,\n        \"message\": \"Berhasil Mengubah Data\",\n        \"content\": null\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/dgrijalva/jwt-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/dgrr/fastws" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/go-logfmt/logfmt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/go-sql-driver/mysql" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/go-stack/stack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang-jwt/jwt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang-sql/civil" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang/groupcache" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang/protobuf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/google/go-cmp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/google/uuid" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gorilla/mux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gorilla/websocket" vcs="Git" />
+  </component>
+</project>
